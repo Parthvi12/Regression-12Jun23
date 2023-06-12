@@ -3,6 +3,30 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "OAuth",
+      "isDefault": false
+    },
+    {
+      "id": "MSSQL",
+      "isDefault": false
+    },
+    {
+      "id": "Oracle",
+      "isDefault": false
+    },
+    {
+      "id": "S3",
+      "isDefault": false
+    },
+    {
+      "id": "Assets-test.appsmith.com",
+      "isDefault": false
+    },
+    {
+      "id": "Rating",
+      "isDefault": false
     }
   ],
   "viewMode": false,
