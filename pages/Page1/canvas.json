@@ -777,6 +777,7 @@
               "key": "ka11rl4959",
               "isDeprecated": false,
               "rightColumn": 50,
+              "disableLink": true,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "0ctb24d0rs",
