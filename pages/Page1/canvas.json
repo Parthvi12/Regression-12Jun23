@@ -480,7 +480,7 @@
               "dynamicHeight": "FIXED",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "bottomRowBeforeCollapse": 105,
-              "isVisible": false,
+              "isVisible": true,
               "version": 1,
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
