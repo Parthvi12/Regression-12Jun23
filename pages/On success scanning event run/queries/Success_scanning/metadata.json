@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page2",
+    "pageId": "On success scanning event run",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -38,7 +38,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-12T09:16:35Z"
   },
-  "id": "Page2_Success_scanning",
+  "id": "On success scanning event run_Success_scanning",
   "deleted": false,
   "gitSyncId": "6486d0748c7f6c0450c106c7_6486e2738c7f6c0450c10841"
 }

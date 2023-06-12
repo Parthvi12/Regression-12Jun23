@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page2",
-    "slug": "page2",
+    "name": "On success scanning event run",
+    "slug": "on-success-scanning-event-run",
     "layouts": [
       {
         "viewMode": false,
@@ -381,14 +381,15 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page2",
+        "id": "On success scanning event run",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "6486d0748c7f6c0450c106c7_6486d31c8c7f6c0450c10704"

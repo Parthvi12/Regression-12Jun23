@@ -1,11 +1,15 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "scanner binding to check box",
       "isDefault": true
     },
     {
-      "id": "Page2",
+      "id": "On success scanning event run",
+      "isDefault": false
+    },
+    {
+      "id": "On scanning failure event",
       "isDefault": false
     }
   ],

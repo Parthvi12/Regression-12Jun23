@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "scanner binding to check box",
+    "slug": "scanner-binding-to-check-box",
     "layouts": [
       {
         "viewMode": false,
@@ -27,7 +27,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "scannerLayout": "ALWAYS_ON",
+              "scannerLayout": "CLICK_TO_SCAN",
               "boxShadow": "none",
               "mobileBottomRow": 61,
               "widgetName": "CodeScanner1",
@@ -140,14 +140,15 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "scanner binding to check box",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "6486c77b8c7f6c0450c1063d_6486c77b8c7f6c0450c10640"
