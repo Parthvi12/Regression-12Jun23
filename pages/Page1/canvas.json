@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 510,
+          "bottomRow": 610,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -46,7 +46,7 @@
                 "barcode reader"
               ],
               "topRow": 28,
-              "bottomRow": 34,
+              "bottomRow": 61,
               "parentRowSpace": 10,
               "type": "CODE_SCANNER_WIDGET",
               "hideCard": false,
