@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2130,
+          "bottomRow": 1830,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -451,11 +451,11 @@
             {
               "boxShadow": "none",
               "mobileBottomRow": 107,
-              "widgetName": "MultiSelect1",
+              "widgetName": "choose",
               "isFilterable": true,
               "displayName": "MultiSelect",
               "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
-              "labelText": "Label",
+              "labelText": "Choose a colour",
               "searchTags": [
                 "dropdown",
                 "tags"
@@ -468,12 +468,10 @@
               "serverSideFiltering": false,
               "hideCard": false,
               "mobileRightColumn": 26,
-              "defaultOptionValue": [
-                "GREEN",
-                "RED"
-              ],
+              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 30.078125,
+              "dynamicTriggerPathList": [],
               "leftColumn": 4,
               "dynamicBindingPathList": [
                 {
@@ -481,23 +479,13 @@
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "options"
                 }
               ],
               "labelPosition": "Top",
-              "options": [
-                {
-                  "label": "Blue",
-                  "value": "BLUE"
-                },
-                {
-                  "label": "Green",
-                  "value": "GREEN"
-                },
-                {
-                  "label": "Red",
-                  "value": "RED"
-                }
-              ],
+              "options": "{{select.data}}",
               "placeholderText": "Select option(s)",
               "isDisabled": false,
               "key": "94ofxyv0rt",
@@ -581,9 +569,9 @@
               "isLoading": false,
               "mobileTopRow": 111,
               "responsiveBehavior": "fill",
-              "originalTopRow": 73,
+              "originalTopRow": 135,
               "mobileLeftColumn": 3,
-              "originalBottomRow": 81,
+              "originalBottomRow": 143,
               "step": 1,
               "showMarksLabel": true,
               "minRange": 5
@@ -596,8 +584,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.8a93874870bccee17fbcd02b950c3bcd.svg",
-              "topRow": 194,
-              "bottomRow": 213,
+              "topRow": 115,
+              "bottomRow": 134,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -605,7 +593,7 @@
               "mobileRightColumn": 28,
               "animateLoading": true,
               "parentColumnSpace": 30.078125,
-              "leftColumn": 33,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -695,7 +683,7 @@
               "key": "4p6r4g6rtr",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 57,
+              "rightColumn": 27,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "4yphp7r66g",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -727,11 +715,11 @@
               "isLoading": false,
               "mobileTopRow": 125,
               "responsiveBehavior": "fill",
-              "originalTopRow": 132,
+              "originalTopRow": 115,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 151,
+              "originalBottomRow": 134,
               "minDynamicHeight": 15
             },
             {
@@ -764,7 +752,7 @@
               "version": 1,
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 23,
+              "originalBottomRow": 85,
               "fontSize": "1.25rem",
               "mobileBottomRow": 59,
               "widgetName": "content",
@@ -839,10 +827,10 @@
               "isLoading": false,
               "mobileTopRow": 38,
               "responsiveBehavior": "fill",
-              "originalTopRow": 89,
+              "originalTopRow": 151,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 31,
-              "originalBottomRow": 121
+              "originalBottomRow": 183
             }
           ]
         },
@@ -851,6 +839,14 @@
             {
               "id": "Page1_Query1",
               "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_select",
+              "name": "select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
