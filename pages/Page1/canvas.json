@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 510,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -25,7 +25,117 @@
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": []
+          "children": [
+            {
+              "scannerLayout": "ALWAYS_ON",
+              "boxShadow": "none",
+              "mobileBottomRow": 61,
+              "widgetName": "CodeScanner1",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Code Scanner",
+              "iconSVG": "/static/media/icon.c4a2da6d32c0f212d031fca147e4f7cb.svg",
+              "searchTags": [
+                "barcode scanner",
+                "qr scanner",
+                "code detector",
+                "barcode reader"
+              ],
+              "topRow": 28,
+              "bottomRow": 34,
+              "parentRowSpace": 10,
+              "type": "CODE_SCANNER_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 24,
+              "animateLoading": true,
+              "parentColumnSpace": 20.078125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "isDisabled": false,
+              "key": "b35ywwk2u6",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 24,
+              "isDefaultClickDisabled": true,
+              "widgetId": "sjq2e0kqpk",
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "label": "Scan a QR/Barcode",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 28,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 0,
+              "placement": "CENTER"
+            },
+            {
+              "mobileBottomRow": 51,
+              "widgetName": "Checkbox1",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.9733ca0215cbd7985795d8264a3848cf.svg",
+              "searchTags": [
+                "boolean"
+              ],
+              "topRow": 47,
+              "bottomRow": 51,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "mobileRightColumn": 36,
+              "animateLoading": true,
+              "parentColumnSpace": 20.078125,
+              "leftColumn": 24,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "r9vmwt0zkf",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 36,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "dsrjkskoi5",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "label": "Label",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 47,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 24,
+              "defaultCheckedState": true,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
+            }
+          ]
         },
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
