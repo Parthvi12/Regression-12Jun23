@@ -68,7 +68,7 @@
               "rightColumn": 37,
               "isDefaultClickDisabled": true,
               "widgetId": "andz00gf2v",
-              "onCodeDetected": "{{download(Success_scanning.data, Success_scanning.data.png, 'image/png').then(() => {\n  showModal('Modal2');\n}).catch(() => {\n  showAlert('Scanning failed', 'warning');\n});}}",
+              "onCodeDetected": "{{download(Success_scanning.data, Success_scanning.data.csv, 'text/csv').then(() => {\n  showModal('Modal2');\n}).catch(() => {\n  showAlert('Scanning failed', 'warning');\n});}}",
               "isVisible": true,
               "label": "Scan a QR/Barcode",
               "version": 1,
