@@ -28,7 +28,7 @@
           "children": [
             {
               "mobileBottomRow": 44,
-              "widgetName": "DocumentViewer1",
+              "widgetName": "docs",
               "isCanvas": false,
               "displayName": "Document Viewer",
               "iconSVG": "/static/media/icon.108b743c515ff2bdc38f122cdf229c71.svg",
@@ -43,6 +43,7 @@
               "mobileRightColumn": 30,
               "animateLoading": true,
               "parentColumnSpace": 30.078125,
+              "dynamicTriggerPathList": [],
               "leftColumn": 6,
               "dynamicBindingPathList": [],
               "key": "84vl2mmskn",
@@ -57,7 +58,7 @@
               "mobileTopRow": 4,
               "responsiveBehavior": "fill",
               "mobileLeftColumn": 6,
-              "docUrl": "https://www.learningcontainer.com/wp-content/uploads/2019/09/sample-pdf-file.pdf"
+              "docUrl": "https://www.africau.edu/images/default/sample.pdf"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
