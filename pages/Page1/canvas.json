@@ -734,7 +734,7 @@
             },
             {
               "mobileBottomRow": 59,
-              "widgetName": "Text3",
+              "widgetName": "content",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
               "searchTags": [
