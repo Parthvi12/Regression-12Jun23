@@ -11,6 +11,22 @@
     {
       "id": "On scanning failure event",
       "isDefault": false
+    },
+    {
+      "id": "2 scanner with check box",
+      "isDefault": false
+    },
+    {
+      "id": "IMAGE WIDGET TESTING",
+      "isDefault": false
+    },
+    {
+      "id": "icon widget testing",
+      "isDefault": false
+    },
+    {
+      "id": "Stat box",
+      "isDefault": false
     }
   ],
   "viewMode": false,

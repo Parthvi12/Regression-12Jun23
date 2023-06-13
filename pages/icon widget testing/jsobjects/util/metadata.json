@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "util",
+    "pageId": "icon widget testing",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "icon widget testing_util",
+  "deleted": false,
+  "gitSyncId": "6486d0748c7f6c0450c106c7_6487656d36c8d86632299927"
+}

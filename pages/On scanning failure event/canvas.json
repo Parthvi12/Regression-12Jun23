@@ -69,7 +69,7 @@
               "rightColumn": 37,
               "isDefaultClickDisabled": true,
               "widgetId": "andz00gf2v",
-              "onCodeDetected": "{{showModal('model').then(() => {\n  setInterval(setInterval(() => {\n    const a = 0;\n  }, 5000, '1'), 5000, model.isVisible);\n  navigateTo('scanner binding to check box', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('failed', 'error');\n});}}",
+              "onCodeDetected": "{{resetWidget(\"CodeScanner1\", true);}}",
               "isVisible": true,
               "label": "Scan a QR/Barcode",
               "version": 1,
