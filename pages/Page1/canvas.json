@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2080,
+          "bottomRow": 2180,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -509,8 +509,8 @@
               "defaultStartValue": 10,
               "tooltipAlwaysOn": false,
               "labelText": "Percentage",
-              "topRow": 101,
-              "bottomRow": 109,
+              "topRow": 147,
+              "bottomRow": 155,
               "parentRowSpace": 10,
               "labelWidth": 8,
               "type": "RANGE_SLIDER_WIDGET",
@@ -560,9 +560,9 @@
               "isLoading": false,
               "mobileTopRow": 111,
               "responsiveBehavior": "fill",
-              "originalTopRow": 101,
+              "originalTopRow": 147,
               "mobileLeftColumn": 3,
-              "originalBottomRow": 109,
+              "originalBottomRow": 155,
               "step": 1,
               "showMarksLabel": true,
               "minRange": 5
@@ -1066,7 +1066,7 @@
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 130,
+              "originalBottomRow": 166,
               "minDynamicHeight": 10
             },
             {
@@ -1099,7 +1099,7 @@
               "version": 1,
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 85,
+              "originalBottomRow": 131,
               "fontSize": "1.25rem",
               "mobileBottomRow": 59,
               "widgetName": "content",
@@ -1109,7 +1109,7 @@
                 "paragraph",
                 "label"
               ],
-              "bottomRow": 85,
+              "bottomRow": 131,
               "parentRowSpace": 10,
               "hideCard": false,
               "mobileRightColumn": 48,
@@ -1145,8 +1145,8 @@
               "searchTags": [
                 "embed"
               ],
-              "topRow": 120,
-              "bottomRow": 152,
+              "topRow": 166,
+              "bottomRow": 198,
               "parentRowSpace": 10,
               "source": "https://www.example.com",
               "type": "IFRAME_WIDGET",
@@ -1179,10 +1179,10 @@
               "isLoading": false,
               "mobileTopRow": 38,
               "responsiveBehavior": "fill",
-              "originalTopRow": 120,
+              "originalTopRow": 166,
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 31,
-              "originalBottomRow": 152,
+              "originalBottomRow": 198,
               "onMessageReceived": "{{showModal('Modal1');}}"
             },
             {
@@ -1254,7 +1254,7 @@
             {
               "boxShadow": "none",
               "iconSVG": "/static/media/icon.d0ce957b6c4640f8a7418ce846ee200e.svg",
-              "topRow": 155,
+              "topRow": 201,
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
               "animateLoading": true,
@@ -1279,7 +1279,7 @@
               "version": 2,
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 162,
+              "originalBottomRow": 208,
               "mobileBottomRow": 162,
               "widgetName": "Input1",
               "displayName": "Input",
@@ -1289,7 +1289,7 @@
                 "number",
                 "textarea"
               ],
-              "bottomRow": 162,
+              "bottomRow": 208,
               "parentRowSpace": 10,
               "autoFocus": false,
               "hideCard": false,
@@ -1308,7 +1308,7 @@
               "renderMode": "CANVAS",
               "mobileTopRow": 155,
               "responsiveBehavior": "fill",
-              "originalTopRow": 155,
+              "originalTopRow": 201,
               "mobileLeftColumn": 33,
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
@@ -1328,8 +1328,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 168,
-              "bottomRow": 172,
+              "topRow": 214,
+              "bottomRow": 218,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1366,11 +1366,11 @@
               "isLoading": false,
               "mobileTopRow": 168,
               "responsiveBehavior": "hug",
-              "originalTopRow": 168,
+              "originalTopRow": 214,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 37,
-              "originalBottomRow": 172,
+              "originalBottomRow": 218,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -1429,11 +1429,11 @@
               "isLoading": false,
               "mobileTopRow": 148,
               "responsiveBehavior": "fill",
-              "originalTopRow": 168,
+              "originalTopRow": 204,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 9,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 172,
+              "originalBottomRow": 208,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -2161,6 +2161,53 @@
               "maxDynamicHeight": 9000,
               "width": 456,
               "minDynamicHeight": 24
+            },
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 140,
+              "widgetName": "AudioRecorder1",
+              "displayName": "Audio Recorder",
+              "iconSVG": "/static/media/icon.6854d49465b2ead1c3155f6916b01d0d.svg",
+              "searchTags": [
+                "sound recorder",
+                "voice recorder"
+              ],
+              "topRow": 133,
+              "bottomRow": 140,
+              "parentRowSpace": 10,
+              "type": "AUDIO_RECORDER_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 50,
+              "animateLoading": true,
+              "parentColumnSpace": 14.09375,
+              "leftColumn": 34,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "agfzwshfej",
+              "isDeprecated": false,
+              "rightColumn": 50,
+              "widgetId": "h7ghmr9hip",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 133,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 133,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 34,
+              "originalBottomRow": 140,
+              "iconColor": "white"
             }
           ]
         },
