@@ -177,7 +177,7 @@
               "hideCard": false,
               "shouldScrollContents": true,
               "mobileRightColumn": 31,
-              "animateLoading": "false",
+              "animateLoading": "true",
               "parentColumnSpace": 20.109375,
               "dynamicTriggerPathList": [],
               "leftColumn": 30,
