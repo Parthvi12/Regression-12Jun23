@@ -1,0 +1,14 @@
+INSERT INTO public."assignment" (
+	"id",
+	"date_assigned",
+	"asset_id",
+	"user_id",
+	"date_returned",
+	"notes")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.date_assigned}}',
+	'{{insert_form.formData.asset_id}}',
+	'{{insert_form.formData.user_id}}',
+	'{{insert_form.formData.date_returned}}',
+	'{{insert_form.formData.notes}}');

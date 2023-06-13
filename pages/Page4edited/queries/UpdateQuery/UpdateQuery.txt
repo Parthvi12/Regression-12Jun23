@@ -1,0 +1,7 @@
+UPDATE public."assignment" SET
+		"date_assigned" = '{{update_form.fieldState.date_assigned.isVisible ? update_form.formData.date_assigned : update_form.sourceData.date_assigned}}',
+		"asset_id" = '{{update_form.fieldState.asset_id.isVisible ? update_form.formData.asset_id : update_form.sourceData.asset_id}}',
+    "user_id" = '{{update_form.fieldState.user_id.isVisible ? update_form.formData.user_id : update_form.sourceData.user_id}}',
+		"date_returned" = '{{update_form.fieldState.date_returned.isVisible ? update_form.formData.date_returned : update_form.sourceData.date_returned}}',
+		"notes" = '{{update_form.fieldState.notes.isVisible ? update_form.formData.notes : update_form.sourceData.notes}}'
+WHERE "id" = {{data_table.selectedRow.id}};

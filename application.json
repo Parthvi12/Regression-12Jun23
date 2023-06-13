@@ -1,8 +1,12 @@
 {
   "pages": [
     {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
       "id": "scanner binding to check box",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "On success scanning event run",
@@ -26,18 +30,39 @@
     },
     {
       "id": "Stat box",
+      "isDefault": true
+    },
+    {
+      "id": "Page1 Copy",
+      "isDefault": false
+    },
+    {
+      "id": "Page2 Copy",
+      "isDefault": false
+    },
+    {
+      "id": "Page2 Copy1",
+      "isDefault": false
+    },
+    {
+      "id": "Page3",
+      "isDefault": false
+    },
+    {
+      "id": "Page4edited",
       "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
-  "color": "#FFEBFB",
+  "color": "#D9E7FF",
+  "icon": "calender",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "MOBILE"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
