@@ -67,6 +67,7 @@
               "iconSVG": "/static/media/icon.35f3ec19dbc201b2b26e900b1eeb08a0.svg",
               "topRow": 51,
               "pageSize": 2,
+              "onPageChange": "{{list.run()}}",
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
               "animateLoading": true,
@@ -94,6 +95,7 @@
                 }
               ],
               "leftColumn": 4,
+              "serverSidePagination": true,
               "enhancements": true,
               "children": [
                 {
@@ -101,7 +103,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 330,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -394,6 +396,7 @@
               "itemBackgroundColor": "#FFFFFF",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
+              "totalRecordsCount": "10",
               "hasMetaWidgets": true,
               "isLoading": false,
               "mainCanvasId": "kuoxp5x5uh",
@@ -407,25 +410,34 @@
               "mobileBottomRow": 91,
               "currentItemsView": "{{[]}}",
               "triggeredItemView": "{{{}}}",
-              "widgetName": "List1",
+              "widgetName": "people",
               "listData": "{{list.data}}",
               "displayName": "List",
-              "bottomRow": 91,
+              "bottomRow": 84,
               "parentRowSpace": 10,
               "hideCard": false,
               "templateBottomRow": 16,
               "mobileRightColumn": 28,
               "mainContainerId": "03wd48gtby",
-              "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+              "primaryKeys": "{{people.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
               "parentColumnSpace": 30.078125,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onItemClick"
+                },
+                {
+                  "key": "onPageChange"
+                }
+              ],
               "gridType": "vertical",
+              "defaultSelectedItem": "1",
               "key": "1kt7uumwcw",
               "backgroundColor": "transparent",
               "isDeprecated": false,
               "rightColumn": 28,
               "widgetId": "5iod0oi2bo",
               "minWidth": 450,
+              "onItemClick": "{{showAlert('eRVDSFV', 'success');}}",
               "parentId": "0",
               "renderMode": "CANVAS",
               "mobileTopRow": 51,
@@ -1066,7 +1078,7 @@
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 130,
+              "originalBottomRow": 166,
               "minDynamicHeight": 10
             },
             {
@@ -1429,11 +1441,11 @@
               "isLoading": false,
               "mobileTopRow": 148,
               "responsiveBehavior": "fill",
-              "originalTopRow": 168,
+              "originalTopRow": 204,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 9,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 172,
+              "originalBottomRow": 208,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -2175,19 +2187,24 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_list",
-              "name": "list",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Page1_select",
               "name": "select",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Page1_list",
+              "name": "list",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "(people.pageNo-1) * people.pageSize",
+                "people.pageSize"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

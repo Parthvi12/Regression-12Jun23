@@ -1,1 +1,1 @@
-SELECT ID, NAME FROM users ORDER BY id LIMIT 10;
+SELECT ID, NAME FROM users ORDER BY id LIMIT {{people.pageSize}} OFFSET {{(people.pageNo-1) * people.pageSize}};
