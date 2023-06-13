@@ -7,6 +7,10 @@
     {
       "id": "Page2",
       "isDefault": false
+    },
+    {
+      "id": "theming",
+      "isDefault": false
     }
   ],
   "viewMode": false,
