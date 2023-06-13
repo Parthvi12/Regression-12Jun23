@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1720,
+          "bottomRow": 2080,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -61,12 +61,12 @@
               "docUrl": "https://www.africau.edu/images/default/sample.pdf"
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "requiresFlatWidgetChildren": true,
               "isCanvas": true,
               "iconSVG": "/static/media/icon.35f3ec19dbc201b2b26e900b1eeb08a0.svg",
               "topRow": 51,
-              "pageSize": 3,
+              "pageSize": 2,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
               "animateLoading": true,
@@ -90,7 +90,7 @@
                   "key": "borderRadius"
                 },
                 {
-                  "key": "boxShadow"
+                  "key": "listData"
                 }
               ],
               "leftColumn": 4,
@@ -408,23 +408,7 @@
               "currentItemsView": "{{[]}}",
               "triggeredItemView": "{{{}}}",
               "widgetName": "List1",
-              "listData": [
-                {
-                  "id": "001",
-                  "name": "Blue",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "002",
-                  "name": "Green",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "003",
-                  "name": "Red",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                }
-              ],
+              "listData": "{{list.data}}",
               "displayName": "List",
               "bottomRow": 91,
               "parentRowSpace": 10,
@@ -434,6 +418,7 @@
               "mainContainerId": "03wd48gtby",
               "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
               "parentColumnSpace": 30.078125,
+              "dynamicTriggerPathList": [],
               "gridType": "vertical",
               "key": "1kt7uumwcw",
               "backgroundColor": "transparent",
@@ -591,7 +576,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.8a93874870bccee17fbcd02b950c3bcd.svg",
               "topRow": 115,
-              "bottomRow": 130,
+              "bottomRow": 166,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -612,7 +597,7 @@
                   "mobileBottomRow": 150,
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
-                  "bottomRow": 440,
+                  "bottomRow": 460,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -751,7 +736,7 @@
                   "mobileBottomRow": 150,
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
-                  "bottomRow": 100,
+                  "bottomRow": 460,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -873,7 +858,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 100,
+                  "bottomRow": 460,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -909,7 +894,7 @@
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 100,
+                  "bottomRow": 460,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -944,7 +929,7 @@
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 100,
+                  "bottomRow": 460,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -979,7 +964,7 @@
                   "widgetName": "Canvas9",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 100,
+                  "bottomRow": 460,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1081,7 +1066,7 @@
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 129,
+              "originalBottomRow": 130,
               "minDynamicHeight": 10
             },
             {
@@ -1399,8 +1384,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 168,
-              "bottomRow": 172,
+              "topRow": 204,
+              "bottomRow": 208,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1444,11 +1429,11 @@
               "isLoading": false,
               "mobileTopRow": 148,
               "responsiveBehavior": "fill",
-              "originalTopRow": 167,
+              "originalTopRow": 168,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 9,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 171,
+              "originalBottomRow": 172,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -2135,7 +2120,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "mobileLeftColumn": 16,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 21,
+                      "originalBottomRow": 25,
                       "minDynamicHeight": 15
                     }
                   ],
@@ -2184,6 +2169,14 @@
             {
               "id": "Page1_Query1",
               "name": "Query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_list",
+              "name": "list",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
