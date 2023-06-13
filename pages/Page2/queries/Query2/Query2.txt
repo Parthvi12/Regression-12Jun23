@@ -1,0 +1,1 @@
+SELECT DISTINCT country as label, country as value FROM users where country {{MultiSelect1.filterText ? "LIKE" : "~*"}} {{MultiSelect1.filterText ? "'"MultiSelect1.filterText%"'" : null}} Limit 20;

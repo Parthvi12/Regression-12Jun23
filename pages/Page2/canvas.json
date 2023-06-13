@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1190,
+          "bottomRow": 380,
           "containerStyle": "none",
           "snapRows": 118,
           "parentRowSpace": 1,
@@ -24,9 +24,92 @@
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": []
+          "children": [
+            {
+              "boxShadow": "none",
+              "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
+              "labelText": "Label",
+              "topRow": 29,
+              "labelWidth": 5,
+              "type": "MULTI_SELECT_WIDGET_V2",
+              "serverSideFiltering": true,
+              "defaultOptionValue": "",
+              "animateLoading": true,
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "options"
+                }
+              ],
+              "options": "{{Query2.data}}",
+              "placeholderText": "Select option(s)",
+              "isDisabled": false,
+              "isRequired": false,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileBottomRow": 36,
+              "widgetName": "MultiSelect1",
+              "isFilterable": true,
+              "displayName": "MultiSelect",
+              "searchTags": [
+                "dropdown",
+                "tags"
+              ],
+              "bottomRow": 36,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 32,
+              "parentColumnSpace": 30.109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onFilterUpdate"
+                }
+              ],
+              "labelPosition": "Top",
+              "key": "uygvuc6q0e",
+              "labelTextSize": "0.875rem",
+              "isDeprecated": false,
+              "rightColumn": 32,
+              "widgetId": "pq10t2p0u7",
+              "minWidth": 450,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 29,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 12,
+              "maxDynamicHeight": 9000,
+              "onFilterUpdate": "{{Query2.run()}}",
+              "minDynamicHeight": 4
+            }
+          ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page2_Query2",
+              "name": "Query2",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "MultiSelect1.filterText ? \"LIKE\" : \"~*\"",
+                "MultiSelect1.filterText ? 'MultiSelect1.filterText%' : null"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page2",
         "deleted": false,

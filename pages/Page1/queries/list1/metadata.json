@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select",
+    "name": "list1",
     "datasource": {
       "name": "Users",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT DISTINCT country as label, country as value FROM users LIMIT 10 LIKE '{{MultiSelect2.filterText}}%';",
+      "body": "SELECT DISTINCT country as label, country as value FROM users LIMIT 10;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,24 +27,18 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "MultiSelect2.filterText"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-12T09:14:24Z"
+    "createdAt": "2023-06-13T08:47:17Z"
   },
-  "id": "Page1_select",
+  "id": "Page1_list1",
   "deleted": false,
-  "gitSyncId": "6486c77b8c7f6c0450c1063d_6486e1f08c7f6c0450c1082f"
+  "gitSyncId": "64880e767630795f44033f6c_64882d15a247513a4e9bdace"
 }

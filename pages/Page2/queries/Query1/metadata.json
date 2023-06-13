@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select",
+    "name": "Query1",
     "datasource": {
       "name": "Users",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Page2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT DISTINCT country as label, country as value FROM users LIMIT 10 LIKE '{{MultiSelect2.filterText}}%';",
+      "body": "SELECT * FROM users where email {{MultiSelect1.filterText ? \"~*\" : \"IS NOT\"}} {{MultiSelect1.filterText ? \"'\"+MultiSelect1.filterText+\"'\" : null}} Limit 20;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,15 +36,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "MultiSelect2.filterText"
+      "MultiSelect1.filterText ? \"'\"+MultiSelect1.filterText+\"'\" : null",
+      "MultiSelect1.filterText ? \"~*\" : \"IS NOT\""
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-12T09:14:24Z"
+    "createdAt": "2023-06-13T08:54:19Z"
   },
-  "id": "Page1_select",
+  "id": "Page2_Query1",
   "deleted": false,
-  "gitSyncId": "6486c77b8c7f6c0450c1063d_6486e1f08c7f6c0450c1082f"
+  "gitSyncId": "64880e767630795f44033f6c_64882ebba247513a4e9bdb23"
 }

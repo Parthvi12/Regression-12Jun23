@@ -1,1 +1,1 @@
-SELECT DISTINCT country as label, country as value FROM users LIMIT 5;
+SELECT DISTINCT country as label, country as value FROM users LIMIT 10 LIKE '{{MultiSelect2.filterText}}%';
