@@ -1,0 +1,895 @@
+{
+  "unpublishedPage": {
+    "name": "Page2",
+    "slug": "page2",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 850,
+          "containerStyle": "none",
+          "snapRows": 43,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 450,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "mobileBottomRow": 27,
+              "widgetName": "CategorySlider1",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showMarksLabel"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelStyle"
+                },
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "displayName": "Category Slider",
+              "iconSVG": "/static/media/icon.5436c8c9fe1bdad6d04e9f0d0db4df63.svg",
+              "labelText": "Size",
+              "searchTags": [
+                "range"
+              ],
+              "topRow": 0,
+              "bottomRow": 8,
+              "parentRowSpace": 10,
+              "labelWidth": "6",
+              "type": "CATEGORY_SLIDER_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 41,
+              "defaultOptionValue": "med",
+              "animateLoading": "{{Checkbox1.isChecked}}",
+              "parentColumnSpace": 10.109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onChange"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "showMarksLabel"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelStyle"
+                }
+              ],
+              "shouldTruncate": false,
+              "labelPosition": "Left",
+              "labelTooltip": "Slide",
+              "options": [
+                {
+                  "label": "Xtra small",
+                  "value": "Xtra small"
+                },
+                {
+                  "label": "small",
+                  "value": "small"
+                },
+                {
+                  "label": "med",
+                  "value": "med"
+                },
+                {
+                  "label": "large",
+                  "value": "large"
+                },
+                {
+                  "label": "xlarge",
+                  "value": "xlarge"
+                },
+                {
+                  "label": "xxlarge",
+                  "value": "xxlarge"
+                },
+                {
+                  "label": "3xlarge",
+                  "value": "3xlarge"
+                },
+                {
+                  "label": "4xlarge",
+                  "value": "4xlarge"
+                },
+                {
+                  "label": "5xlarge",
+                  "value": "5xlarge"
+                }
+              ],
+              "labelStyle": "{{RadioGroup1.selectedOptionValue==='Y'?'BOLD':'ITALIC'}}",
+              "labelTextColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "isDisabled": "{{Checkbox2.isChecked}}",
+              "key": "iokzi933h3",
+              "labelTextSize": "{{RadioGroup1.selectedOptionValue==='Y'?'0.875rem':'1.875rem'}}",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "onChange": "{{showAlert('Changed', 'error');}}",
+              "widgetId": "9bero9w3g1",
+              "accentColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "sliderSize": "s",
+              "shouldScroll": false,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "right",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 19,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 1,
+              "showMarksLabel": "{{Checkbox1.isChecked}}"
+            },
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "mobileBottomRow": 42,
+              "widgetName": "Camera1",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isMirrored"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "displayName": "Camera",
+              "iconSVG": "/static/media/icon.1a46cc49ff4e1fbf1a9aea3099520c2a.svg",
+              "searchTags": [
+                "photo",
+                "video recorder"
+              ],
+              "topRow": 9,
+              "bottomRow": 42,
+              "onImageSave": "{{showAlert('Image captured', 'success');}}",
+              "parentRowSpace": 10,
+              "type": "CAMERA_WIDGET",
+              "hideCard": false,
+              "mode": "CAMERA",
+              "mobileRightColumn": 25,
+              "parentColumnSpace": 10.109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onVideoSave"
+                },
+                {
+                  "key": "onImageSave"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isMirrored"
+                },
+                {
+                  "key": "isDisabled"
+                }
+              ],
+              "isDisabled": "{{Checkbox2.isChecked}}",
+              "key": "fi2phixfyr",
+              "isMirrored": "{{Checkbox1.isChecked}}",
+              "isDeprecated": false,
+              "rightColumn": 25,
+              "onVideoSave": "{{showAlert('Video saved', 'info');}}",
+              "widgetId": "34uvpuqfq6",
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 9,
+              "responsiveBehavior": "hug",
+              "borderRadius": "{{RadioGroup1.selectedOptionValue==='Y'?'0px':'1.5rem'}}",
+              "mobileLeftColumn": 0
+            },
+            {
+              "isCompact": "{{Checkbox1.isChecked}}",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "mobileBottomRow": 14,
+              "widgetName": "MenuButton1",
+              "configureMenuItems": {
+                "label": "Configure menu items",
+                "id": "config",
+                "config": {
+                  "id": "config",
+                  "label": "Menu Item",
+                  "isVisible": true,
+                  "isDisabled": false
+                }
+              },
+              "dynamicPropertyPathList": [
+                {
+                  "key": "menuItems.menuItem1.isVisible"
+                },
+                {
+                  "key": "menuItems.menuItem1.isDisabled"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "isCompact"
+                },
+                {
+                  "key": "menuVariant"
+                },
+                {
+                  "key": "iconName"
+                },
+                {
+                  "key": "placement"
+                },
+                {
+                  "key": "menuColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "displayName": "Menu button",
+              "iconSVG": "/static/media/icon.3cf002d0ae89cb8036b5fe5195a33339.svg",
+              "topRow": 10,
+              "bottomRow": 14,
+              "parentRowSpace": 10,
+              "type": "MENU_BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 44,
+              "animateLoading": "{{Checkbox1.isChecked}}",
+              "parentColumnSpace": 10.109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "menuItems.menuItem1.onClick"
+                }
+              ],
+              "leftColumn": 28,
+              "dynamicBindingPathList": [
+                {
+                  "key": "menuColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "menuItems.menuItem1.isVisible"
+                },
+                {
+                  "key": "menuItems.menuItem1.isDisabled"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isCompact"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "menuVariant"
+                },
+                {
+                  "key": "iconName"
+                },
+                {
+                  "key": "placement"
+                }
+              ],
+              "isDisabled": "{{Checkbox2.isChecked}}",
+              "sourceData": [],
+              "key": "943ldmtnui",
+              "isDeprecated": false,
+              "rightColumn": 44,
+              "iconName": "{{RadioGroup1.selectedOptionValue==='Y'?'airplane':'box'}}",
+              "menuVariant": "{{RadioGroup1.selectedOptionValue==='Y'?'SECONDARY':'TERTIARY'}}",
+              "widgetId": "i888ifro7m",
+              "menuItems": {
+                "menuItem1": {
+                  "label": "First Menu Item",
+                  "id": "menuItem1",
+                  "widgetId": "",
+                  "isVisible": "{{Checkbox1.isChecked}}",
+                  "isDisabled": "{{Checkbox2.isChecked}}",
+                  "index": 0,
+                  "onClick": "{{showAlert('First', 'warning');}}",
+                  "iconName": "circle-arrow-down",
+                  "iconAlign": "right",
+                  "iconColor": "#14532d",
+                  "textColor": "#581c87",
+                  "backgroundColor": "#bbf7d0"
+                },
+                "menuItem2": {
+                  "label": "Second Menu Item",
+                  "id": "menuItem2",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1
+                },
+                "menuItem3": {
+                  "label": "Third Menu Item",
+                  "id": "menuItem3",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 2
+                }
+              },
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "label": "Open Menu",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 10,
+              "borderRadius": "{{RadioGroup1.selectedOptionValue==='Y'?'0px':'1.5rem'}}",
+              "mobileLeftColumn": 28,
+              "menuItemsSource": "STATIC",
+              "menuColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "iconAlign": "right",
+              "placement": "{{RadioGroup1.selectedOptionValue==='Y'?'START':'BETWEEN'}}"
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "iconSVG": "/static/media/icon.2e5219121218e442100087ea88da5cef.svg",
+              "labelText": "Select",
+              "topRow": 17,
+              "labelWidth": "6",
+              "type": "MULTI_SELECT_TREE_WIDGET",
+              "mode": "SHOW_PARENT",
+              "defaultOptionValue": [
+                "GREEN"
+              ],
+              "animateLoading": "{{Checkbox1.isChecked}}",
+              "leftColumn": 29,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "allowClear"
+                },
+                {
+                  "key": "expandAll"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelStyle"
+                }
+              ],
+              "labelTooltip": "MTS",
+              "options": "[\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\",\n    \"children\": [\n      {\n        \"label\": \"Dark Green\",\n        \"value\": \"DARK GREEN\"\n      },\n      {\n        \"label\": \"Light Green\",\n        \"value\": \"LIGHT GREEN\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\",\n    \"children\": [\n      {\n        \"label\": \"Dark Red\",\n        \"value\": \"DARK RED\"\n      },\n      {\n        \"label\": \"Light Red\",\n        \"value\": \"LIGHT RED\"\n      }\n    ]\n  }\n]",
+              "labelStyle": "{{RadioGroup1.selectedOptionValue==='Y'?'BOLD':'ITALIC'}}",
+              "placeholderText": "Select option(s)",
+              "isDisabled": "{{Checkbox2.isChecked}}",
+              "isRequired": "{{Checkbox1.isChecked}}",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "version": 1,
+              "expandAll": "{{Checkbox2.isChecked}}",
+              "onDropdownOpen": "{{showAlert('Dropdown opened', 'info');}}",
+              "isLoading": false,
+              "borderRadius": "{{RadioGroup1.selectedOptionValue==='Y'?'0px':'1.5rem'}}",
+              "originalBottomRow": 24,
+              "mobileBottomRow": 24,
+              "widgetName": "MultiTreeSelect1",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "allowClear"
+                },
+                {
+                  "key": "expandAll"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelStyle"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "displayName": "Multi TreeSelect",
+              "searchTags": [
+                "dropdown"
+              ],
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 49,
+              "shouldScrollContents": true,
+              "parentColumnSpace": 10.109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onOptionChange"
+                },
+                {
+                  "key": "onDropdownOpen"
+                },
+                {
+                  "key": "onDropdownClose"
+                }
+              ],
+              "labelPosition": "Left",
+              "onDropdownClose": "{{showAlert('Dropdown Closed', 'success');}}",
+              "labelTextColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "key": "memqcbcyco",
+              "labelTextSize": "{{RadioGroup1.selectedOptionValue==='Y'?'0.875rem':'1.875rem'}}",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "ipwul1tbpt",
+              "minWidth": 450,
+              "parentId": "0",
+              "labelAlignment": "right",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 17,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 17,
+              "mobileLeftColumn": 29,
+              "maxDynamicHeight": 9000,
+              "onOptionChange": "{{showAlert('Option Change', 'error');}}",
+              "allowClear": "{{Checkbox2.isChecked}}",
+              "minDynamicHeight": 4
+            },
+            {
+              "defaultValue": "500",
+              "iconSVG": "/static/media/icon.9b32c922c2540d18f7a13976d9cb2f24.svg",
+              "tooltipAlwaysOn": "{{Checkbox2.isChecked}}",
+              "labelText": "Percent",
+              "topRow": 45,
+              "labelWidth": "7",
+              "type": "NUMBER_SLIDER_WIDGET",
+              "animateLoading": "{{Checkbox1.isChecked}}",
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "tooltipAlwaysOn"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelStyle"
+                }
+              ],
+              "labelTooltip": "slide",
+              "labelStyle": "{{RadioGroup1.selectedOptionValue==='Y'?'BOLD':'ITALIC'}}",
+              "isDisabled": "{{Checkbox2.isChecked}}",
+              "onChange": "{{showAlert('Changed', 'success');}}",
+              "accentColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "version": 1,
+              "isLoading": false,
+              "originalBottomRow": 53,
+              "mobileBottomRow": 53,
+              "widgetName": "NumberSlider1",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "tooltipAlwaysOn"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelStyle"
+                }
+              ],
+              "displayName": "Number Slider",
+              "searchTags": [
+                "range"
+              ],
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 52,
+              "min": "100",
+              "parentColumnSpace": 10.109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onChange"
+                }
+              ],
+              "shouldTruncate": false,
+              "labelPosition": "Left",
+              "labelTextColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "key": "myojh22ssv",
+              "labelTextSize": "{{RadioGroup1.selectedOptionValue==='Y'?'0.875rem':'1.875rem'}}",
+              "isDeprecated": false,
+              "rightColumn": 52,
+              "max": "1000",
+              "widgetId": "7i66jx9u87",
+              "marks": "[\n  {\n    \"value\": 250,\n    \"label\": \"250%\"\n  },\n  {\n    \"value\": 500,\n    \"label\": \"500%\"\n  },\n  {\n    \"value\": 750,\n    \"label\": \"750%\"\n  }\n]",
+              "sliderSize": "l",
+              "shouldScroll": false,
+              "parentId": "0",
+              "labelAlignment": "right",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 45,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 45,
+              "mobileLeftColumn": 12,
+              "step": "100",
+              "showMarksLabel": true
+            },
+            {
+              "mobileBottomRow": 60,
+              "widgetName": "Progress1",
+              "progressType": "circular",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showResult"
+                },
+                {
+                  "key": "fillColor"
+                }
+              ],
+              "displayName": "Progress",
+              "iconSVG": "/static/media/icon.63065ff64699dbf6b2267d42d3713b98.svg",
+              "searchTags": [
+                "percent"
+              ],
+              "topRow": 56,
+              "bottomRow": 85,
+              "parentRowSpace": 10,
+              "type": "PROGRESS_WIDGET",
+              "isIndeterminate": false,
+              "hideCard": false,
+              "fillColor": "{{RadioGroup1.selectedOptionValue==='Y'?'#231F20':'#b91c1c'}}",
+              "mobileRightColumn": 47,
+              "parentColumnSpace": 10.109375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 19,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fillColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showResult"
+                }
+              ],
+              "key": "3o10hp9wks",
+              "showResult": "{{Checkbox1.isChecked}}",
+              "isDeprecated": false,
+              "rightColumn": 47,
+              "counterClosewise": false,
+              "widgetId": "hivf4bb0yx",
+              "isVisible": "{{Checkbox1.isChecked}}",
+              "steps": "10",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 56,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 56,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 19,
+              "originalBottomRow": 85,
+              "progress": "76",
+              "counterClockwise": false
+            },
+            {
+              "mobileBottomRow": 29,
+              "widgetName": "Checkbox1",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.9733ca0215cbd7985795d8264a3848cf.svg",
+              "searchTags": [
+                "boolean"
+              ],
+              "topRow": 22,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "mobileRightColumn": 44,
+              "animateLoading": true,
+              "parentColumnSpace": 10.109375,
+              "leftColumn": 32,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "rpm4kcp00b",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 44,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "3mn3hb2g7e",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "label": "Label",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 25,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 25,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 32,
+              "defaultCheckedState": true,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 29,
+              "minDynamicHeight": 4
+            },
+            {
+              "mobileBottomRow": 29,
+              "widgetName": "Checkbox2",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.9733ca0215cbd7985795d8264a3848cf.svg",
+              "searchTags": [
+                "boolean"
+              ],
+              "topRow": 22,
+              "bottomRow": 26,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "mobileRightColumn": 60,
+              "animateLoading": true,
+              "parentColumnSpace": 10.109375,
+              "leftColumn": 48,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "rpm4kcp00b",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 60,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "ecozs4ua4o",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "label": "Label",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 25,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 25,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 48,
+              "defaultCheckedState": true,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 29,
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 38,
+              "widgetName": "RadioGroup1",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.d0171e5090e38b83793ce771c861be9e.svg",
+              "searchTags": [
+                "choice"
+              ],
+              "topRow": 29,
+              "bottomRow": 36,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 54,
+              "defaultOptionValue": "Y",
+              "animateLoading": true,
+              "parentColumnSpace": 10.109375,
+              "leftColumn": 34,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Top",
+              "options": [
+                {
+                  "label": "Yes",
+                  "value": "Y"
+                },
+                {
+                  "label": "No",
+                  "value": "N"
+                }
+              ],
+              "isDisabled": false,
+              "key": "507cjbnh7g",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 54,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "jo86rfc060",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Label",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 32,
+              "originalTopRow": 29,
+              "mobileLeftColumn": 34,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 36,
+              "isInline": true,
+              "alignment": "left",
+              "minDynamicHeight": 4
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Page2",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "6486f4c28c7f6c0450c10938_6486f4cb8c7f6c0450c10949"
+}
