@@ -1,0 +1,60 @@
+{
+    "mobileBottomRow": 228,
+    "widgetName": "CheckboxGroup1",
+    "displayName": "Checkbox Group",
+    "iconSVG": "/static/media/icon.bda24aa6992a7bc7616b83aca2c931d9.svg",
+    "labelText": "Label",
+    "topRow": 222,
+    "bottomRow": 228,
+    "parentRowSpace": 10,
+    "labelWidth": 5,
+    "type": "CHECKBOX_GROUP_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 26,
+    "animateLoading": true,
+    "parentColumnSpace": 14.09375,
+    "leftColumn": 3,
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "borderRadius"}
+    ],
+    "labelPosition": "Top",
+    "options": [
+        {
+            "label": "Blue",
+            "value": "BLUE"
+        },
+        {
+            "label": "Green",
+            "value": "GREEN"
+        },
+        {
+            "label": "Red",
+            "value": "RED"
+        }
+    ],
+    "isDisabled": false,
+    "key": "u3pu3ep07e",
+    "labelTextSize": "0.875rem",
+    "isRequired": false,
+    "isDeprecated": false,
+    "rightColumn": 26,
+    "defaultSelectedValues": ["BLUE"],
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "8soo7byd4t",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 2,
+    "parentId": "0",
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 222,
+    "originalTopRow": 222,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 3,
+    "maxDynamicHeight": 9000,
+    "originalBottomRow": 228,
+    "isInline": true,
+    "minDynamicHeight": 4
+}
